@@ -1,7 +1,10 @@
 
 x = 0.1:1/22:1;
 d = (1 + 0.6*sin(2*pi*x/0.7)) + 0.3*sin(2*pi*x)/2;
-plot(x,d, 'kx');
+% plot();
+
+% plot(x,d, 'kx');
+% pause();
 
 w1 = [randn(1) randn(1) randn(1) randn(1) randn(1)];
 w2 = [randn(1) randn(1) randn(1) randn(1) randn(1)];
@@ -47,6 +50,5 @@ for i=1:length(x)
     
 end
 
-pause();
 % plot(x,d, 'kx');
-plot (x, y_final, 'kx');
+plot (x,d, 'ko', x, y_final, 'r*');
